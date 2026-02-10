@@ -1,6 +1,5 @@
 "use client";
 import type { NextPage } from "next";
-
 import Development from "./development";
 import HowTo from "./how-to";
 import styles from "./mainPage.module.css";

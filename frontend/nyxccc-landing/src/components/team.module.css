@@ -8,7 +8,7 @@
   text-align: center;
   margin-bottom: 48px;
   margin-top: 20%;
-  margin-right: 1vw;
+  margin-left: 1vw;
   letter-spacing: 0.01em;
   z-index: 2;
 }
@@ -25,6 +25,7 @@
   margin: 0 auto;  /* ← Center the container horizontally */
 }
 
+.teamCardCenter,
 .teamCardRight,
 .teamCardLeft {
   width: 240px;
