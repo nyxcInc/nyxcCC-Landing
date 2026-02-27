@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^15.3.1",
+    "next": "15.3.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.5.0",
@@ -31,7 +31,9 @@
     "type": "git",
     "url": "git+https://github.com/NyxCarbon/nyxcCC-Landing.git"
   },
-  "keywords": ["nyxccc"],
+  "keywords": [
+    "nyxccc"
+  ],
   "author": "Brittany Salas",
   "license": "ISC",
   "bugs": {
