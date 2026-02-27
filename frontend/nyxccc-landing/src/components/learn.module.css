@@ -54,7 +54,7 @@
 .learnContainer {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 37px;
   width: 100%;

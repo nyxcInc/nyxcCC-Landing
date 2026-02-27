@@ -17,7 +17,7 @@
   padding: 0;               /* ← Remove any padding */
 }
 
-  .floatingBlob {
+ /* .floatingBlob {
     position:fixed;
     bottom: 0;
     left: -400;
@@ -51,16 +51,17 @@
 
     transform: rotate(90deg);
   }
+    */
 
 .pageContainer {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
+} 
 
 .mainContent {
   flex: 1;  /* ← Takes up remaining space */
-}
+} 
 
 @keyframes fadeIn {
   from {

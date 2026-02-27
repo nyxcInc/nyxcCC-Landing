@@ -47,7 +47,7 @@
   text-align: left;
   z-index: 3;
   position: relative;       /* ← Position absolutely */
-  top: 20px;               /* ← Position above the member photo */
+  top: 10px;               /* ← Position above the member photo */
   left: 50%;               /* ← Center horizontally */
   transform: translateX(-50%); /* ← Perfect centering */
   width: 80%;             /* ← Full width for centering */
@@ -55,22 +55,24 @@
   align-items: left;     /* ← Center items vertically */
   justify-content: left;
   margin-left: -18px;    
-  gap: 10px;      
+  gap: 10px;  
+   flex-direction: column;     
 }
 
 .linkedinIcon {
   width: 20px;
   height: 20px; 
   cursor: pointer;  
-  transform: translateY(21px);      
+  transform: translateY(21px);  
+  padding: 0%;    
 }
 
 /* Style the first memberPhoto (TeamCard) as background */
 .memberPhoto:first-child {
   position: absolute;
-  top: -40;
-  left: 0;
-  width: 100%;
+  top: -10;
+  left: -100;
+  width: 200%;
   height: 100%;
   z-index: 1;              /* ← Background layer */
   object-fit: contain;
@@ -85,7 +87,7 @@
   height: 180px;
   border-radius: 16px;
   object-fit: cover;
-  margin-top: clamp(80px, 8vw, 50px);
+  margin-top: clamp(60px, 8vw, 50px);
   z-index: 2;
   background: transparent;
 }
