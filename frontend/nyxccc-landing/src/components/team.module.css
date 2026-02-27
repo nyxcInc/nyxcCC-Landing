@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: flex-start; 
   z-index: 1;
-  margin: 10px;
+  margin: 100px;
   margin-bottom: 60px;  
   aspect-ratio: 240/340;     /* Maintain card proportions for different screens */
 }

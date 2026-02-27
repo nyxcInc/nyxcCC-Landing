@@ -1,9 +1,10 @@
 .nyxcSupporterNetwork {
   position: absolute;
-  left: 50vw;
+  left:45vw;
   transform: translateX(-50%);
-  font-size: var(--font-size-30);
-  padding: 20px 60px;
+   /*font-size:  var(--font-size-50);*/
+  font-size: 40px;
+  padding: 20px 100px;
   box-sizing: border-box;
   text-align: flex-start;
   display: felx;
@@ -11,87 +12,127 @@
   align-items: center;
   width: 700px;
   z-index: 3;
-  max-width: 90%;          /* ← Limit width to allow wrapping */
+  max-width: 100%;          /* ← Limit width to allow wrapping */
   white-space: normal;     /* ← Allow text to wrap */
   word-wrap: break-word;   /* ← Break long words if needed */
   overflow-wrap: break-word;
   flex-direction: column;
+  line-height: normal;
+  margin-bottom: 1px; 
 }
 
-
-
-.logoTrayChild {
-  display: none;
-}
-.logoTray,
-.logoTrayChild,
-.logoTrayItem {
-  width: 100%;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.logoTrayItem {
-  display: none;
-}
-.logoTray {
+/*.logoTray {
   margin: 0 !important;
   z-index: 0;
   background-image: url('/nyxccc-img/Logo Tray.png');
-  background-size: contain;
+  background-size: contain;  /* Changed from fit-content to contain *
   background-position: center;
   background-repeat: no-repeat;
+  width: 115%;  /*  1600px; Wider than logosInTray (1300px) *
+  height: 200px;
+  position: absolute;
+  left:500px;
+  transform: translateX(-50%);  /* Center within supporterWrapper *
+  top: 200px;
 }
-.watsonLogoIcon {
-  width: 186px;
-  position: relative;
-  height: 47px;
-  object-fit: cover;
-  z-index: 1;
-}
-.bankOfMontrealLogo1Icon {
-  width: 188px;
-  position: relative;
-  max-height: 100%;
-  object-fit: cover;
-  z-index: 2;
-}
+removed because annoying and not dynamic */
+
+/* Background tray container */
 .logosInTray {
-  align-self: stretch;
-  height: 226px;
+  height: 600;  /* more space before borrower section */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-36) 10vw;
   box-sizing: border-box;
   position: relative;
-  gap: 15vw;
-  z-index:1;
-  margin-top:40px;
+  z-index: 1;
+  width: 1300px;  
+  max-width: 100%;
 }
-.partnerLogos,
-.partnerLogos1,
-.supporterNetork {
-  width: 971px;
+
+/* Inner content wrapper - logos and title */
+.supporterWrapper {
+  width: 1500px;  /* Wider than logosInTray to contain tray */
+  max-width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
+  margin: 0 auto;  /*  Center the wrapper */
 }
-.partnerLogos,
-.partnerLogos1 {
-  width: 1440px;
-  align-items: flex-start;
+
+
+
+
+/* Top Row - Left: Watson */
+.watsonLogo {
+  position: absolute;
+  width: 186px;
+  height: 47px;
+  left: 44px;
+  top: 204.5px;
+  object-fit: contain;
+  z-index: 1;
 }
-.partnerLogos1 {
-  height: 646px;
-  padding: 173px 227px;
-  box-sizing: border-box;
+
+/* Top Row - Center: BMO */
+.bmoLogo {
+  position: absolute;
+  width: 205px;
+  height: 74px;
+  left: 465px;
+  top: 183.5px;
+  object-fit: contain;
+  z-index: 1;
 }
+
+/* Top Row - Right: Conservation X Labs */
+.xlabsLogo {
+  position: absolute;
+  width: 399px;
+  height: 100px;
+  left: 788px;
+  top: 178px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Bottom Row - Left: Scroobious */
+.scroobiousLogo {
+  position: absolute;
+  width: 246px;
+  height: 32px;
+  left: 230px;
+  top: 289.5px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Bottom Row - Center: StartOut */
+.startoutLogo {
+  position: absolute;
+  width: 227px;
+  height: 56px;
+  left: 647px;
+  top: 289.5px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Bottom Row - Right: CVWBC */
+.cvwbcLogo {
+  position: absolute;
+  width: 103px;
+  height: 55px;
+  left: 1158px;
+  top: 290px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Outter Container */
 .partnerLogos {
   width: 100%;
   position: relative;
@@ -99,9 +140,75 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: var(--font-size-30);
   color: var(--color-white);
   font-family: var(--font-itc-avant-garde-gothic-std);
+  padding: 100px 10px 100px 10px; 
+}
+
+
+/* Responsive Design */
+
+/* Responsive adjustments */
+@media screen and (max-width: 1440px) {
+  .partnerLogos1 {
+    padding: 100px 20px;
+  }
+}
+
+  
+  .supporterNetork {
+    width: 100%;
+  }
+
+
+
+@media screen and (max-width: 1200px) {
+  .nyxcSupporterNetwork {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  
+  .logosInTray {
+    width: 100%;
+    height: 300px;
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nyxcSupporterNetwork {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .logosInTray {
+    transform: scale(0.65);
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nyxcSupporterNetwork {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .logosInTray {
+    transform: scale(0.5);
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nyxcSupporterNetwork {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .logosInTray {
+    transform: scale(0.4);
+    height: 150px;
+  }
 }
 
 @media screen and (max-width: 1200px) {

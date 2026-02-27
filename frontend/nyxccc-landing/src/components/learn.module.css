@@ -45,6 +45,114 @@
   font-size: 20px;
 }
 
+.learn {
+  width: 100%;
+  position: relative;
+  padding-bottom: 10%; /* Maintain aspect ratio */
+}
+
+.learnContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 37px;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.ctaCard {
+  width: 403px;
+  height: felx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.ctaDescription {
+  font-family: var(--font-itc-avant-garde-gothic-std);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  color: var(--color-white);
+  width: 403px;
+  white-space: pre-wrap;
+  margin-bottom: 92px; /* Space between text and button */
+  margin-top: 200px;
+}
+
+.ctaButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.ctaButtonText {
+  font-family: var(--font-itc-avant-garde-gothic-std);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.ctaButtonText:hover {
+  opacity: 0.8;
+}
+
+.ctaUnderline {
+  width: 100px;
+  height: 1.5px;
+  background-color: #D2FFE7;
+  filter: blur(1px);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1300px) {
+  .learnContainer {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ctaCard {
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .ctaDescription {
+    font-size: 24px;
+    width: 100%;
+  }
+  
+  .ctaButtonText {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ctaDescription {
+    font-size: 20px;
+  }
+  
+  .ctaButtonText {
+    font-size: 20px;
+  }
+  
+  .ctaUnderline {
+    width: 80px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .learnSection {
     width: 90%;

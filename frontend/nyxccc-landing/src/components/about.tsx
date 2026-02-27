@@ -15,19 +15,19 @@ const About: NextPage = () => {
           <span>{`nix-see, `}</span>
           <span>the name comes from Nyx</span>
           <span>{`, `}</span>
-          <span>{`the primordial Greek goddess of night, daughter of Chaos and mother of Aether, the brightness in the sky. `}</span>
+          <span>{`the primordial Greek goddess of night, daughter of Chaos and mother of Aether, 
+          the brightness in the sky. `}</span>
         </div>
       </section>
       <div className={styles.nyxcIsDedicated}>
-          <span>{`nyxc is dedicated to transforming economic opportunities in underserved
-        communities by addressing critical barriers to financial inclusion and
-        climate resilience. `}</span>
+          <span>{` nyxc is dedicated to transforming economic opportunities in underserved communities 
+          by addressing critical barriers to financial inclusion and climate resilience.`}</span>
       </div>
       <section className={styles.environmentalMarketsPose}>
-                  <span>{`Environmental markets pose challenges for small and mid-sized businesses
-        that need capital to grow. By providing loans and comprehensive
-        educational support, we empower business owners to overcome challenges
-        and unlock their services to help communities adapt to extreme weather.`}</span>
+                  <span>{`Economic transitions and extreme whether pose challenges to small and mid-sized businesses.
+                   nyxc provides technical assistance to business owners who help their communities respond 
+                   to these events. Specifically, nyxc supports  financial planning, digital marketing, technology
+                   adoption, and access to finance with the goal of empowering communities to build resilience.`}</span>
       </section>
       <Image
         className={styles.aboutChild}

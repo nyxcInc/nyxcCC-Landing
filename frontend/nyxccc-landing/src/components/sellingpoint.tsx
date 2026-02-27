@@ -51,7 +51,7 @@ const SellingPoint: NextPage<sellingPointProps> = ({ className = '' }) => {
               </div>
             </div>
             <div className={styles.smallBusinessLoans}>
-              Technical <br /> Support
+              Technical <br /> Assistance
             </div>
           </div>
           <div className={styles.sellingPointC}>
@@ -89,7 +89,7 @@ const SellingPoint: NextPage<sellingPointProps> = ({ className = '' }) => {
               </div>
             </div>
             <div className={styles.technicalSupport}>
-              Environmental Market Insights
+              AI Technology Reserach
             </div>
           </div>
         </div>

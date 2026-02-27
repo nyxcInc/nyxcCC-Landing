@@ -21,6 +21,7 @@ const onLogoClick = () => {
   }
 };
 
+
 useEffect(() => {
   const learnSection = document.querySelector('[class*="learn"]');
   const logo = document.querySelector(`.${styles.nyxcLogoWhite11}`);
@@ -50,56 +51,73 @@ useEffect(() => {
       <section className={styles.footer2}>
         <div className={styles.footerColumn}>
           <div className={styles.footerNav}>
-             <Image
-            className={styles.nyxcLogoWhite11}
-            loading="lazy"
-            width={173.2}
-            height={41}
-            sizes="100vw"
-            alt=""
-            src="/nyxccc-img/nyxc logo white.svg"
-            onClick={onLogoClick}
-            style={{cursor:"pointer"}}            
+            <Image
+              className={styles.nyxcLogoWhite11}
+              loading="lazy"
+              width={173.2}
+              height={41}
+              sizes="100vw"
+              alt=""
+              src="/nyxccc-img/nyxc logo white.svg"
+              onClick={onLogoClick}
+              style={{cursor:"pointer"}}            
             />
      
-            <div className={styles.discordBlock}>
-              <Image
-                className={styles.discord59688981Icon}
-                loading="lazy"
-                width={33}
-                height={33}
-                sizes="100vw"
-                alt=""
-                src="/nyxccc-img/discord_5968898 1.svg"
-                onClick={() => openExternalLink("https://discord.gg/W9KAXfws")}
-              />
-              <div className={styles.divider} />
-            </div>
             <div className={styles.contactBlock}>
               <div className={styles.contactWrapper}>
                 <div className={styles.newsletter}>
                   <a
-                  href="https://share.hsforms.com/1YXfQ9Z8YRY2fuFz4Kwu3Vgcdvye"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.contact}
-                    >
-                    Newsletter
+                    href="https://www.linkedin.com/company/nyxcc/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.contact}
+                  >
+                    LinkedIn
                   </a>
                 </div>
               </div>
               <div className={styles.divider} />
             </div>
+
+            <div className={styles.contactBlock}>
+              <div className={styles.contactWrapper}>
+                <div className={styles.newsletter}>
+                  <a
+                    href="https://nyxc.substack.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.contact}
+                  >
+                    Substack
+                  </a>
+                </div>
+              </div>
+              <div className={styles.divider} />
+            </div>
+
             <div className={styles.supportBlock}>
               <div className={styles.supportnyxcnetWrapper}>
                 <div className={styles.supportnyxcnet}>support@nyxc.net</div>
               </div>
               <div className={styles.divider} />
             </div>
+
+            <div className={styles.toTopBlock}>
+              <div className={styles.toTopWrapper}>
+                <div 
+                  className={styles.toTop}
+                  onClick={onLogoClick}
+                  style={{ cursor: "pointer" }}
+                >
+                  Intro
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
-      <div className={styles.div}>©2025 nyxc Community Loan Fund</div>
+      <div className={styles.div}> © 2026 nyxc Community Capital 501(c)(3)</div>
     </div>
   );
 };

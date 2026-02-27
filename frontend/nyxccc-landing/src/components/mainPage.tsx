@@ -13,6 +13,7 @@ import Learn from "./learn";
 import SellingPoint from "./sellingpoint";
 import Tagline from "./tagline";  
 import Footer from "./footer"
+import CustomerTestimony from "./customerTestimony";
 
 
 type MainPageProps = {
@@ -27,6 +28,7 @@ const MainPage: NextPage<MainPageProps> = ({ className = "" }) => {
       <Tagline />
       <AboutSection />
       <SellingPoint />
+      <CustomerTestimony />
       <PartnerLogos />
       <Development />
       <Borrower />

@@ -1,3 +1,16 @@
+.howToContainer {
+  width: 100%;
+  max-width: 1500px;  /* Match Figma design width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 149px 67px;  /* Figma design padding */
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;  /* Center the container */
+}
+
+
 
 .confirmTerms1 {
   margin: 0;
@@ -44,6 +57,19 @@
   font-family: var(--font-itc-avant-garde-gothic-std);
   padding: 40px 20px;
   box-sizing: border-box;
+}
+
+/* Title */
+.howToTitle {
+  font-family: var(--font-itc-avant-garde-gothic-std);
+  font-size: 40px;  /* ✅ Changed from 30px to 60px */
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 107px;  /* Space before cards */
+  letter-spacing: 0.01em;
+  line-height: normal;
+  white-space: nowrap;
 }
 
 .tray31 {

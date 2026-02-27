@@ -1,6 +1,7 @@
 .newsletter {
   color: var(--color-white);
   cursor: pointer;
+  margin-left: 20px; 
   /* Add more styles as needed */
 }
 
@@ -62,7 +63,7 @@
 
 .supportnyxcnet {
   position: relative;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .supportnyxcnetWrapper {
@@ -82,7 +83,28 @@
   gap: 25px;  /* ← Increased from var(--gap-4) */
 }
 
+.toTop {
+  position: relative;
+  margin-left: 20px;
+  margin-top: 15px;
+}
 
+.toTopWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10);
+}
+
+.toTopBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 var(--padding-16) 0 0;
+  gap: 25px;  /* ← Increased from var(--gap-4) */
+}
 
 .footerColumn,
 .footerNav {
@@ -111,7 +133,7 @@
 }
 
 .div {
-    width: 252px;
+    width: 300px;
     position: absolute;
     font-size: var(--font-size-14);
     line-height: 18px;
@@ -219,3 +241,5 @@
     min-height: 190;
   }
 }
+
+

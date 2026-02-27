@@ -42,8 +42,8 @@ const Tagline: NextPage<TaglineProps> = ({ className = "" }) => {
           <div className={styles.nameAndTag}>
             <h1 className={styles.companyName}>nyxc</h1>
             <div className={styles.tagLine}>
-              A community loan fund for small businesses that clean up
-              pollution and restore natural land.
+              A non-profit loan fund for small businesses 
+              that build resilient communities.
             </div>
           </div>
           <Image

@@ -16,11 +16,9 @@ const Example: NextPage = () => {
               />
         <section className={styles.screenShotAndDescription}>
           <div className={styles.descriptionText}>
-            Small business owners in environmental markets face significant
-            challenges in accessing financing. nyxc works with companies to
-            provide loans, flexible financing, and comprehensive educational
-            support. We empower businesses to overcome challenges and unlock
-            their services to help communities adapt to extreme weather. 
+            nyxc goes beyond traditional financial services. The organization provides technical assistance to business owners, 
+            plus an overview of financing pathways at no cost. If you run a small or family owned business, 
+            select “Get Started” to learn more.
           </div>
           <Image
             className={styles.example730ef7ab1Icon}
