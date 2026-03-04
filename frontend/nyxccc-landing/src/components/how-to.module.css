@@ -8,6 +8,7 @@
   box-sizing: border-box;
   position: relative;
   margin: 0 auto;  /* Center the container */
+  margin-top: -300px;  /* Center the container */
 }
 
 
@@ -69,7 +70,8 @@
   margin-bottom: 107px;  /* Space before cards */
   letter-spacing: 0.01em;
   line-height: normal;
-  white-space: nowrap;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 
 .tray31 {
@@ -128,6 +130,7 @@
     padding: 15px 5px;
     font-size: var(--font-size-18);
     max-width: 200px;
+    text-align: center;
   }
   
   .signUpGroup {

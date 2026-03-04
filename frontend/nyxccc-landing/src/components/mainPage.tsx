@@ -14,6 +14,7 @@ import SellingPoint from "./sellingpoint";
 import Tagline from "./tagline";  
 import Footer from "./footer"
 import CustomerTestimony from "./customerTestimony";
+import ServiceOffering from "./ServiceOffering";
 
 
 type MainPageProps = {
@@ -33,6 +34,7 @@ const MainPage: NextPage<MainPageProps> = ({ className = "" }) => {
       <Development />
       <Borrower />
       <HowTo />
+      <ServiceOffering/>
       <Team />
       <Learn />
       <div className={styles.floatingBlob}></div>

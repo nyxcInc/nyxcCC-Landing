@@ -130,7 +130,13 @@
   }
 }
 @media screen and (max-width: 450px) {
-  .environmentalMarketsPose,
+  .environmentalMarketsPose {
+  padding-left: 39px;
+  padding-right: 39px;
+  padding-top: 100px;
+  box-sizing: border-box
+  }
+
   .nyxcIsDedicated,
   .pronouncedNixSeeTheContainer {
     font-size: var(--font-size-18);

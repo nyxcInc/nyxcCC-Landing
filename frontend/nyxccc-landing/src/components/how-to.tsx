@@ -90,7 +90,6 @@ const HowTo: NextPage<HowToType> = ({ className = "" }) => {
     </div>
    </div>
   );
-  
 };
 
 export default HowTo;

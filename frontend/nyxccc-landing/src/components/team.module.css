@@ -93,10 +93,43 @@
 }
 
 /* Responsive design for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .teamPhotos {
     flex-direction: column;
     align-items: center;
     gap: 24px;
+  }
+
+  .teamCardCenter,
+  .teamCardRight,
+  .teamCardLeft {
+    margin: 40px auto;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .teamPhotos {
+    align-items: center;
+  }
+
+  .teamCardCenter,
+  .teamCardRight,
+  .teamCardLeft {
+    margin: 30px auto;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .teamPhotos {
+    align-items: center;
+  }
+
+  .teamCardCenter,
+  .teamCardRight,
+  .teamCardLeft {
+    margin: 20px auto;
+    align-items: center;
   }
 }

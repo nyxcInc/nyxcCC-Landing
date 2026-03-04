@@ -1,0 +1,191 @@
+.ellipse {
+  width: 100%;
+  height: 687px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 0;
+}
+
+.serviceOfferingContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  min-height: 900px;
+  margin-top: 200px; 
+  margin-bottom: -500px; /* Reduce bottom margin to Team section */
+}
+
+.fiSection {
+  width: 100%;
+  max-width: 1440px;
+  height: 900px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizonEllipse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+
+.textContainer {
+  position: relative;
+  z-index: 10;
+  max-width: 1299px;
+  padding: 0 71px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-family: var(--font-itc-avant-garde-gothic-std, 'ITC Avant Garde Gothic Std', sans-serif);
+}
+
+.title {
+  margin: -300px 150px 97px 150px;
+  font-size:35px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  white-space: normal;
+  text-align: center;
+}
+
+.description {
+  margin: 0 auto;
+  width: 2000px;
+  max-width: calc(100% - 300px);
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  white-space: normal;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .textContainer {
+    max-width: 1000px;
+    padding: 0 50px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 70px;
+  }
+
+  .description {
+    width: 900px;
+    max-width: calc(100% - 100px);
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .fiSection {
+    height: 800px;
+  }
+
+  .textContainer {
+    max-width: 800px;
+    padding: 0 40px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .description {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fiSection {
+    height: 700px;
+  }
+
+  .textContainer {
+    max-width: 600px;
+    padding: 0 30px;
+  }
+
+  .title {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .description {
+    width: 90%;
+    max-width: 90%;
+    font-size: 18px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fiSection {
+    height: 600px;
+  }
+
+  .textContainer {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    width: 95%;
+    max-width: 95%;
+    font-size: 16px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .fiSection {
+    height: 550px;
+  }
+
+  .textContainer {
+    padding: 0 15px;
+  }
+
+  .title {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .description {
+    width: 98%;
+    max-width: 98%;
+    font-size: 14px;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+}

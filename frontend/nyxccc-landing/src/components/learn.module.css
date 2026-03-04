@@ -119,35 +119,49 @@
 @media screen and (max-width: 1300px) {
   .learnContainer {
     flex-direction: column;
+    align-items: center;
     gap: 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .learnContainer {
+    align-items: center;
+  }
+
   .ctaCard {
     width: 90%;
     max-width: 400px;
+    align-items: center;
   }
-  
+
   .ctaDescription {
     font-size: 24px;
     width: 100%;
   }
-  
+
   .ctaButtonText {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .learnContainer {
+    align-items: center;
+  }
+
+  .ctaCard {
+    align-items: center;
+  }
+
   .ctaDescription {
     font-size: 20px;
   }
-  
+
   .ctaButtonText {
     font-size: 20px;
   }
-  
+
   .ctaUnderline {
     width: 80px;
   }
