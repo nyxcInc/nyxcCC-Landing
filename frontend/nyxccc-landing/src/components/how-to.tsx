@@ -13,10 +13,10 @@ export type HowToType = {
 
 const HowTo: NextPage<HowToType> = ({ className = "" }) => {
   return (
-   <div id="loan-qualification" className={styles.confirmTerms1}>
+   <div  className={styles.confirmTerms1}>
           <div className={styles.howToContainer}>
       {/* Title */}
-      <div className={styles.howToTitle}>
+      <div id="loan-qualification"className={styles.howToTitle}>
       Loan Qualification Process
       </div>
     <div className={[styles.tray31, className].join(" ")}>

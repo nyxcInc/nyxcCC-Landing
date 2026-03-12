@@ -11,11 +11,7 @@ const About: NextPage = () => {
     <div id="company-description" className={styles.about}>
       <section className={styles.pronouncedNixSeeTheNameCWrapper}>
         <div className={styles.pronouncedNixSeeTheContainer}>
-          <span>{`Pronounced `}</span>
-          <span>{`nix-see, `}</span>
-          <span>the name comes from Nyx</span>
-          <span>{`, `}</span>
-          <span>{`the primordial Greek goddess of night, daughter of Chaos and mother of Aether, 
+          <span>{`Pronounced nix-see, the name comes from Nyx the primordial Greek goddess of night, daughter of Chaos and mother of Aether, 
           the brightness in the sky. `}</span>
         </div>
       </section>

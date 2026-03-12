@@ -32,38 +32,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
-  .desctiptionText {
-    margin-top: 50px;
-  }
-  
-  .example730ef7ab1Icon {
-    margin-top: 50px;
-  }
-}
 
-@media screen and (max-width: 480px) {
-  .desctiptionText {
-    margin-top: 70px;
-  }
-  
-  .example730ef7ab1Icon {
-    margin-top: 70px;
-  }
-      .screenShotAndDescription {
-      top: calc(100vh + 200px); /* Below viewport + offset */
-    }
-}
-
-@media screen and (max-width: 356px) {
-  .desctiptionText {
-    margin-top: 90px;
-  }
-  
-  .example730ef7ab1Icon {
-    margin-top: 90px;
-  }
-}
 
 .screenShotAndDescription {
   width: 90%;
@@ -137,65 +106,13 @@
     box-sizing: border-box;
   }
 
-@media screen and (max-width: 480px) {
-.aboutChild {
-  width: 100vw;
-  height: 687px;
-  position: absolute;
-  margin: 0 !important;
-  top: 0px;
-  left: 50vw;
-  right: 40vw;
-  transform: translateX(-50%);
-  border-radius: 50%;
-  overflow: visible;
-  flex-shrink: 0;
-  z-index: 3;
-  box-sizing: border-box;
-
-  
-}
-  .desctiptionText {
-    width: 280px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 15px 40px;
-    font-size: var(--font-size-18);
-    text-align: center;
-     margin-top: 100px;
-  }
-
-  .exampleSection {
-    gap: 60px;
-    padding: 40px 20px;
-    box-sizing: border-box;
-  }
-}
-
-
-@media screen and (max-width: 356px) {
-  
-  .desctiptionText {
-    width: 280px;
-    max-width: 100%;
-    font-size: var(--font-size-16);
-    text-align: center;
-     margin-left: 0vw;
-      margin-right: 3vw;
-  }
-  }
-  .exampleSection {
-    gap: 40px;
-    box-sizing: border-box;
-  }
-
-
 
 @media screen and (max-width: 900px) {
   .example730ef7ab1Icon {
     opacity: 0.3;
     transition: opacity 0.3s ease-out;
   }
+
   .desctiptionText {
   box-sizing: border-box;
   overflow-wrap: break-word;
@@ -222,7 +139,48 @@
   margin-top:0 auto;
   font-size: var(--font-size-20);
   text-align: justify;
-
-  
   }
 }
+
+@media screen and (max-width: 480px) {
+.aboutChild {
+  width: 100vw;
+  height: 687px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0px;
+  left: 50vw;
+  right: 40vw;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  overflow: visible;
+  flex-shrink: 0;
+  z-index: 3;
+  box-sizing: border-box;
+
+  
+}
+  .descriptionText {
+    position: absolute;
+    margin-top: 100px;
+     padding: 0 40px !important;
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    left: 20px;
+    right: 20px;
+  }
+}
+
+
+@media screen and (max-width: 356px) {
+  
+  .desctiptionText {
+    text-align: center;
+    margin-left: 0vw;
+    margin-right: 3vw;
+  }
+  }
+  .exampleSection {
+    gap: 40px;
+    box-sizing: border-box;
+  }

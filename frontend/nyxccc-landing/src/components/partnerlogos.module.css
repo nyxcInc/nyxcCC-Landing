@@ -1,178 +1,117 @@
 .nyxcSupporterNetwork {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-   /*font-size:  var(--font-size-50);*/
+  position: relative;
   font-size: 40px;
-  padding: 20px 100px;
   box-sizing: border-box;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 700px;
-  z-index: 3;
+  z-index: 1;
   max-width: 100%;          /* ← Limit width to allow wrapping */
-  white-space: normal;     /* ← Allow text to wrap */
-  word-wrap: break-word;   /* ← Break long words if needed */
+  white-space: normal;     /* ← Allow text to wrap */ 
   overflow-wrap: break-word;
   flex-direction: column;
   line-height: normal;
-  margin-bottom: 1px;
+  margin-bottom: 20px;
+  margin-top: 20px
 }
 
-/*.logoTray {
+.logoTray {
+  display: none;  /* Hidden for now, can be re-enabled if needed */
   margin: 0 !important;
   z-index: 0;
   background-image: url('/nyxccc-img/Logo Tray.png');
-  background-size: contain;  /* Changed from fit-content to contain *
+  background-size: contain;  /* Changed from fit-content to contain */
   background-position: center;
   background-repeat: no-repeat;
-  width: 115%;  /*  1600px; Wider than logosInTray (1300px) *
+  width: 115%;  /*  1600px; Wider than logosInTray (1300px) */
   height: 200px;
   position: absolute;
   left:500px;
-  transform: translateX(-50%);  /* Center within supporterWrapper *
+  transform: translateX(-50%);  /* Center within supporterWrapper */
   top: 200px;
 }
-removed because annoying and not dynamic */
+ 
 
-/* Background tray container */
 .logosInTray {
-  height: 600;  /* more space before borrower section */
-  display: flex;
-  flex-direction: row;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 2 columns */
+  gap: 40px 60px;  /* vertical horizontal gap */
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   box-sizing: border-box;
   position: relative;
-  z-index: 1;
-  width: 1300px;  
-  max-width: 100%;
+  width: 90%;  
+  margin: 0 auto;
+  padding: 40px 20px 200px;
 }
 
-/* Inner content wrapper - logos and title */
-.supporterWrapper {
-  width: 1500px;  /* Wider than logosInTray to contain tray */
-  max-width: 95%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  margin: 0 auto;  /*  Center the wrapper */
-}
-
-
-
-
-/* Top Row - Left: Watson */
-.watsonLogo {
-  position: absolute;
-  width: 186px;
-  height: 47px;
-  left: 44px;
-  top: 204.5px;
-  object-fit: contain;
-  z-index: 1;
-}
-
-/* Top Row - Center: BMO */
-.bmoLogo {
-  position: absolute;
-  width: 205px;
-  height: 74px;
-  left: 465px;
-  top: 183.5px;
-  object-fit: contain;
-  z-index: 1;
-}
-
-/* Top Row - Right: Conservation X Labs */
-.xlabsLogo {
-  position: absolute;
-  width: 399px;
-  height: 100px;
-  left: 788px;
-  top: 178px;
-  object-fit: cover;
-  z-index: 1;
-}
-
-/* Bottom Row - Left: Scroobious */
-.scroobiousLogo {
-  position: absolute;
-  width: 246px;
-  height: 32px;
-  left: 230px;
-  top: 289.5px;
-  object-fit: cover;
-  z-index: 1;
-}
-
-/* Bottom Row - Center: StartOut */
-.startoutLogo {
-  position: absolute;
-  width: 227px;
-  height: 56px;
-  left: 647px;
-  top: 289.5px;
-  object-fit: cover;
-  z-index: 1;
-}
-
-/* Bottom Row - Right: CVWBC */
+.watsonLogo,
+.bmoLogo,
+.xlabsLogo,
+.scroobiousLogo,
+.startoutLogo,
 .cvwbcLogo {
-  position: absolute;
+  position: static;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Keep individual sizing if needed */
+.watsonLogo {
+  width: 186px;
+}
+
+.bmoLogo {
+  width: 205px;
+}
+
+.xlabsLogo {
+  width: 399px;
+}
+
+.scroobiousLogo {
+  width: 246px;
+}
+
+.startoutLogo {
+  width: 227px;
+}
+
+.cvwbcLogo {
   width: 103px;
-  height: 55px;
-  left: 1158px;
-  top: 290px;
-  object-fit: cover;
-  z-index: 1;
+  order: -1;
 }
 
-/* Outter Container */
-.partnerLogos {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: var(--color-white);
-  font-family: var(--font-itc-avant-garde-gothic-std);
-  padding: 100px 10px 100px 10px; 
-}
-
-
-/* Responsive Design */
 
 /* Responsive adjustments */
-@media screen and (max-width: 1440px) {
-  .partnerLogos1 {
-    padding: 100px 20px;
-  }
-}
 
 @media screen and (max-width: 1000px) {
     .nyxcSupporterNetwork {
       position: relative;
+      margin-bottom: 100px;
+      width: 100%;
       }
 
   .logosInTray {
     flex-direction: column;
     align-items: center;
-    height: auto;
-    gap: 0px;
-    margin-bottom: 100px;
+    width: 100%;
+    gap: 20px;
+    margin: 0 auto 100px auto;
+    height: auto
   }
 
   .supporterWrapper {    
     width: 100%;
-    padding: 0 50px;
     box-sizing: border-box;
     align-items: center;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
   }
 
   .watsonLogo,
@@ -185,41 +124,11 @@ removed because annoying and not dynamic */
     left: 0;
     top: 0;
     margin: 15px auto;
+    max-width: 100%;   
   }
 }
 
   
-
-
-@media screen and (max-width: 1200px) {
-  .nyxcSupporterNetwork {
-    margin-bottom: 50px;
-    margin: 30px auto;
-    align-items: center;
-    text-align: center;
-    left: 50%;
-  }
-  
-  .logosInTray {
-    width: 100%;
-    height: 300px;
-    transform: scale(0.8);
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .nyxcSupporterNetwork {
-    font-size: 40px;
-    margin-bottom: 40px;
-    text-align: center;
-    left: 50%;
-  }
-
-  .logosInTray {
-    transform: scale(0.65);
-    height: 250px;
-  }
-}
 
 
 @media screen and (max-width: 600px) {
@@ -227,13 +136,8 @@ removed because annoying and not dynamic */
     font-size: 40px;
     margin-bottom: 30px;
     text-align: center;
-    left: 50%;
   }
 
-  .logosInTray {
-    transform: scale(0.5);
-    height: 200px;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -241,128 +145,8 @@ removed because annoying and not dynamic */
     font-size: 40px;
     margin-bottom: 20px;
     text-align: center;
-    left: 50%;
   }
 
-  .logosInTray {
-    transform: scale(0.4);
-    height: 150px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .logoTray {
-    background-size: 80%;
-  }
-  
-  .watsonLogoIcon {
-    width: 140px;
-    height: 35px;
-  }
-  
-  .bankOfMontrealLogo1Icon {
-    width: 140px;
-  }
-  
-  .logosInTray {
-    gap: 12vw;
-    padding: var(--padding-36) 8vw;
-  }
-
-    .nyxcSupporterNetwork {
-    padding: 15px 20px;
-    font-size: 40px;
-    text-align: center;
-    left: 50%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-
-  .nyxcSupporterNetwork {
-    text-align: center;
-    left: 50%;
-  }
-  
-  .logoTray {
-    background-size: 70%;
-  }
-  
-  .watsonLogoIcon {
-    width: 120px;
-    height: 30px;
-  }
-  
-  .bankOfMontrealLogo1Icon {
-    width: 120px;
-    height: 30px;
-  }
-  
-  .logosInTray {
-    gap: 10vw;
-    padding: var(--padding-36) 6vw;
-  }
-
-    .nyxcSupporterNetwork {
-    padding: 15px 20px;
-    font-size: 40px;
-    text-align: center;
-    left: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .logoTray {
-    background-size: 60%;
-  }
-  
-  .watsonLogoIcon {
-    width: 100px;
-    height: 25px;
-  }
-  
-  .bankOfMontrealLogo1Icon {
-    width: 100px;
-  }
-  
-  .logosInTray {
-    gap: 8vw;
-    padding: var(--padding-36) 4vw;
-  }
-
-    .nyxcSupporterNetwork {
-    padding: 15px 20px;
-    font-size: 40px;
-    text-align: center;
-    left: 50%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .logoTray {
-    background-size: 50%;
-  }
-  
-  .watsonLogoIcon {
-    width: 80px;
-    height: 20px;
-  }
-  
-  .bankOfMontrealLogo1Icon {
-    width: 80px;
-  }
-  
-  .logosInTray {
-    gap: 6vw;
-    padding: var(--padding-36) 2vw;
-  }
-
-    .nyxcSupporterNetwork {
-    padding: 15px 20px;
-    font-size: 40px;
-    text-align: center;
-    left: 50%;
-  }
 }
 
 

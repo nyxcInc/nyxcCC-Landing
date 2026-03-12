@@ -22,7 +22,6 @@
   z-index: 1;
   min-height: 900px;
   margin-top: 200px; 
-  margin-bottom: -500px; /* Reduce bottom margin to Team section */
 }
 
 .fiSection {
@@ -60,7 +59,7 @@
 
 .title {
   margin: -300px 150px 97px 150px;
-  font-size:35px;
+  font-size:40px;
   font-weight: 400;
   font-style: normal;
   line-height: normal;
@@ -88,14 +87,12 @@
   }
 
   .title {
-    font-size: 28px;
     margin-bottom: 70px;
   }
 
   .description {
     width: 900px;
     max-width: calc(100% - 100px);
-    font-size: 20px;
   }
 }
 
@@ -110,18 +107,13 @@
   }
 
   .title {
-    font-size: 24px;
     margin-bottom: 50px;
-  }
-
-  .description {
-    font-size: 24px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .fiSection {
-    height: 700px;
+     padding-top: 150px;
   }
 
   .textContainer {
@@ -130,14 +122,12 @@
   }
 
   .title {
-    font-size: 22px;
     margin-bottom: 40px;
   }
 
   .description {
     width: 90%;
     max-width: 90%;
-    font-size: 18px;
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -154,17 +144,17 @@
   }
 
   .title {
-    font-size: 18px;
     margin-bottom: 30px;
+    top: -0px;
   }
 
   .description {
     width: 95%;
     max-width: 95%;
-    font-size: 16px;
-    padding: 0 10px;
+    padding: 0 10px;;
     box-sizing: border-box;
   }
+
 }
 
 @media screen and (max-width: 356px) {
@@ -177,14 +167,12 @@
   }
 
   .title {
-    font-size: 16px;
     margin-bottom: 25px;
   }
 
   .description {
     width: 98%;
     max-width: 98%;
-    font-size: 14px;
     padding: 0 5px;
     box-sizing: border-box;
   }

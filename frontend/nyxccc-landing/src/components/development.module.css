@@ -121,7 +121,7 @@
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .developmentSection {
     height: auto;
     min-height: 600px;
@@ -180,7 +180,7 @@
     position: relative;
     left: 0;
     text-align: center;
-    padding: 30px 20px;
+    padding: 10px 30px 20px -90px;
     width: 90%;
     max-width: 400px;
   }
@@ -190,7 +190,7 @@
     right: 0;
     text-align: center;
     padding: 30px 20px;
-    width: 90%;
+    width: 100%;
     max-width: 400px;
   }
 }

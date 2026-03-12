@@ -79,7 +79,7 @@ const onImpactButtonTextClick = () => {
                 <h2 
                   className={styles.lendingButton}
                   onClick={onLendingButtonTextClick}
-                >{`Lending`}</h2>
+                >{`Offering`}</h2>
               </div>
               <div className={styles.commandButtons3}>
                 <h2

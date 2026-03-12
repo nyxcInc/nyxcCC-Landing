@@ -2,7 +2,7 @@
 
 .teamTitle {
   font-family: inherit;
-  font-size: 3rem;
+  font-size: 40px;
   font-weight: 400;
   color: #fff;
   text-align: center;
@@ -71,13 +71,14 @@
 .memberPhoto:first-child {
   position: absolute;
   top: -10;
-  left: -100;
+  left: -100px;
   width: 200%;
   height: 100%;
   z-index: 1;              /* ← Background layer */
   object-fit: contain;
   border-radius: 0;        /* ← Remove border radius for full coverage */
   margin-top: 0;
+  max-width: 90vw;
 }
 
 /* Style the actual member photo (second memberPhoto) */

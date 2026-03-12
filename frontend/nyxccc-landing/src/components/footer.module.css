@@ -201,7 +201,7 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 781px) {
   .footerNav {
     flex-wrap: column;
     justify-content: center;
@@ -209,14 +209,14 @@
   .footer1 {
     height: auto;
     min-height: 190;
+    display:none;
   }
   .div {
     opacity: 0.3;
     transition: opacity 0.3s ease-out;
+    display:none;
   }
-  .nyxcLogoWhite11 {
-  display: none;
-  }
+ 
 }
 
 @media screen and (max-width: 356px) {

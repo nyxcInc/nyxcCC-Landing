@@ -6,8 +6,7 @@
 }
 .customerQuote {
   display: flex;
-  width: 1056px;
-  height: 192px;
+  width: 80%;
   flex-direction: column;
   justify-content: center;
 }
@@ -34,6 +33,7 @@
 .customerNameTxtContainer {
   width: 100%;
   text-align: center;
+   margin-bottom: 20px;
 }
 .photoPlaceHolder {
   display: flex;
@@ -45,25 +45,26 @@
 
 @media screen and (max-width: 768px) {
   .customerQuote {
-    width: 90%;
+    width: 80%;
     padding: 0 20px;
     box-sizing: border-box;
   }
   .customerTestimony {
-    padding: 21px 3%;
+    padding: 60px 3%;
     gap: 40px;
   }
-}
+}  
 
 @media screen and (max-width: 480px) {
   .customerQuote {
     width: 95%;
-    padding: 0 10px;
+    padding: 50px 2%;
     box-sizing: border-box;
+    margin-top: 20px;
   }
   .customerTestimony {
-    padding: 21px 2%;
-    gap: 30px;
+    padding: 50px 2%;
+    gap: 50px;
   }
   .photoPlaceHolder {
     width: 140px;
@@ -76,10 +77,11 @@
     width: 98%;
     padding: 0 5px;
     box-sizing: border-box;
+    margin-top: 150px;
   }
   .customerTestimony {
-    padding: 21px 1%;
-    gap: 20px;
+     padding: 40px 1%;
+    gap: 50px;
   }
   .photoPlaceHolder {
     width: 120px;

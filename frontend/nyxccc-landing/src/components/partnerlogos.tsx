@@ -9,12 +9,12 @@ export type PartnerLogosType = {
 const PartnerLogos: NextPage<PartnerLogosType> = ({ className = "" }) => {
   return (
     <div className={[styles.partnerLogos, className].join(" ")}>
-      <div id="partner-logos" className={styles.partnerLogos}></div>
+      <div className={styles.partnerLogos}></div>
       <div className={styles.partnerLogos1}>
         <div className={styles.supporterWrapper}>
           
           {/* Title */}
-          <div className={styles.nyxcSupporterNetwork}>
+          <div id="partner-logos" className={styles.nyxcSupporterNetwork}>
             nyxc Supporter Network
           </div>
           
