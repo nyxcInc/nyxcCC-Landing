@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: flex-start; 
   z-index: 1;
-  margin: 100px;
+  margin: 80px;
   margin-bottom: 60px;  
   aspect-ratio: 240/340;     /* Maintain card proportions for different screens */
 }
@@ -112,14 +112,37 @@
 @media screen and (max-width: 480px) {
   .teamPhotos {
     align-items: center;
+    width: 100%;
+    padding: 20px 0;
   }
 
   .teamCardCenter,
   .teamCardRight,
   .teamCardLeft {
-    margin: 30px auto;
     align-items: center;
+    margin: 20px auto;
+
   }
+
+    .teamTitle {
+    margin-left: 0;  /* Ensure title is centered */
+    text-align: center;
+  }
+
+
+  .memberPhoto:first-child {
+    left: 50%;  /* Center the background card */
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .memberName {
+    margin-top: 10px;  /* spacing above name */
+    margin-left: -20px;  /* Remove any offset */
+    text-align: left;  /* Center text on mobile */
+    align-items: left;
+  }
+
 }
 
 @media screen and (max-width: 356px) {
