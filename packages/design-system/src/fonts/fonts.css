@@ -1,0 +1,40 @@
+/**
+ * Only weights actually referenced by either consumer app's CSS are
+ * shipped (audited via grep for font-family/font-weight usage in both
+ * repos — see docs/token-decisions.md). Two real families are declared,
+ * each with proper font-weight variants, replacing nyxc's prior anti-pattern
+ * of one family name per weight (e.g. "ITC Avant Garde Gothic Bold"), which
+ * prevents the browser from doing correct weight matching/fallback.
+ */
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std";
+  src: url("./ITCAvantGardeGothicStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std";
+  src: url("./ITCAvantGardeGothicStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std Condensed";
+  src: url("./ITCAvantGardeGothicStdCondensed-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std Condensed";
+  src: url("./ITCAvantGardeGothicStdCondensed-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

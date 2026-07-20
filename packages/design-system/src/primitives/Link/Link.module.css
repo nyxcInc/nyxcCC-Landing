@@ -1,0 +1,21 @@
+.link {
+  font-family: var(--nyxc-font-family-base);
+  color: var(--nyxc-color-text-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+
+.link:hover {
+  text-decoration-color: currentColor;
+  color: var(--nyxc-color-accent);
+}
+
+.size-sm {
+  font-size: var(--nyxc-font-size-100);
+}
+
+.size-md {
+  font-size: var(--nyxc-font-size-200);
+}

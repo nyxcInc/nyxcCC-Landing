@@ -1,3 +1,6 @@
+import "@nyxcinc/design-system/tokens.css";
+import "@nyxcinc/design-system/fonts.css";
+import "@nyxcinc/design-system/primitives.css";
 import "./globals.css";
 
 

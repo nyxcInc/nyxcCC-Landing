@@ -1,0 +1,26 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--nyxc-font-family-base);
+  font-size: var(--nyxc-font-size-100);
+  font-weight: var(--nyxc-font-weight-medium);
+  border-radius: var(--nyxc-radius-xl);
+  padding: var(--nyxc-space-1) var(--nyxc-space-3);
+  line-height: var(--nyxc-line-height-normal);
+}
+
+.variant-accent {
+  background-color: var(--nyxc-color-accent);
+  color: var(--nyxc-color-text-inverse);
+}
+
+.variant-neutral {
+  background-color: var(--nyxc-color-neutral-100);
+  color: var(--nyxc-color-text-inverse);
+}
+
+.variant-outline {
+  background-color: transparent;
+  border: 1px solid var(--nyxc-color-border);
+  color: var(--nyxc-color-text-primary);
+}

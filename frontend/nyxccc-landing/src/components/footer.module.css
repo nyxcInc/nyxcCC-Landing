@@ -36,15 +36,14 @@
   align-items: flex-start;
 }
 
+/* color/text-decoration now come from the design-system Link primitive; this
+   rule only carries footer-specific layout sizing. */
 .contact {
   width: 63px;
   height: 20px;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 0;
   box-sizing: border-box;
-  color: var(--color-white);
-  text-decoration: none;
 }
 
 .contactWrapper {
@@ -83,10 +82,14 @@
   gap: 25px;  /* ← Increased from var(--gap-4) */
 }
 
+/* Overrides the design-system Button's default padding/background so the
+   "Intro" scroll-to-top control keeps its original plain-text footprint. */
 .toTop {
   position: relative;
   margin-left: 20px;
   margin-top: 15px;
+  padding: 0 !important;
+  background: none !important;
 }
 
 .toTopWrapper {

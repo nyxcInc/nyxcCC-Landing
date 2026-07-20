@@ -1,0 +1,22 @@
+/**
+ * Type tokens. Font-size scale replaces repo 1's raw-px names
+ * (--font-size-14/15/20/30/60) with scale steps so new sizes can be
+ * inserted without renumbering.
+ */
+:root {
+  --nyxc-font-family-base: "ITC Avant Garde Gothic Std", sans-serif;
+
+  --nyxc-font-size-100: 14px;
+  --nyxc-font-size-200: 15px;
+  --nyxc-font-size-300: 20px;
+  --nyxc-font-size-400: 30px;
+  --nyxc-font-size-500: 60px;
+
+  --nyxc-font-weight-book: 400;
+  --nyxc-font-weight-medium: 500;
+  --nyxc-font-weight-demi: 600;
+  --nyxc-font-weight-bold: 700;
+
+  --nyxc-line-height-normal: normal;
+  --nyxc-line-height-tight: 1.1;
+}

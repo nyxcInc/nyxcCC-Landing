@@ -9,6 +9,7 @@
     "front:lint": "next lint"
   },
   "dependencies": {
+    "@nyxcinc/design-system": "file:../../packages/design-system",
     "@gsap/react": "^2.1.2",
     "@react-three/drei": "^10.4.2",
     "@react-three/fiber": "^9.1.4",

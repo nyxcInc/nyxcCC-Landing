@@ -1,0 +1,18 @@
+.section {
+  width: 100%;
+}
+
+.spacing-sm {
+  padding-top: var(--nyxc-space-5);
+  padding-bottom: var(--nyxc-space-5);
+}
+
+.spacing-md {
+  padding-top: var(--nyxc-space-7);
+  padding-bottom: var(--nyxc-space-7);
+}
+
+.spacing-lg {
+  padding-top: var(--nyxc-space-8);
+  padding-bottom: var(--nyxc-space-8);
+}

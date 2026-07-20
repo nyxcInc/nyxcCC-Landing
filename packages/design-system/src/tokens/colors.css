@@ -1,0 +1,28 @@
+/**
+ * Canonical brand colors, reconciled from:
+ *  - nyxcCC-Landing globals.css (--color-* Figma-export names)
+ *  - nyxc main.css (hardcoded hex values, e.g. #EED7B3 / #10031D)
+ * See docs/token-decisions.md for the reconciliation table and rationale.
+ */
+:root {
+  /* Brand */
+  --nyxc-color-brand-cream: #eed7b3; /* was --color-wheat-100 (repo 1) / #EED7B3 (repo 2) */
+  --nyxc-color-brand-cream-transparent: rgba(238, 215, 179, 0.02); /* was --color-wheat-200 */
+  --nyxc-color-brand-cream-invisible: rgba(238, 215, 179, 0); /* was --color-wheat-300 */
+  --nyxc-color-brand-mint: #d2ffe7; /* was --color-honeydew-100 */
+  --nyxc-color-brand-mint-soft: rgba(210, 255, 231, 0.8); /* was --color-honeydew-200 */
+
+  /* Neutrals */
+  --nyxc-color-white: #fff;
+  --nyxc-color-neutral-100: #d9d9d9; /* was --color-gainsboro */
+  --nyxc-color-ink: #090012; /* was --color-gray (misnamed — this is near-black, not gray) */
+  --nyxc-color-bg-base: #10031d; /* nyxc's page background; not previously tokenized anywhere */
+
+  /* Semantic aliases (what components should reference) */
+  --nyxc-color-surface: var(--nyxc-color-bg-base);
+  --nyxc-color-text-primary: var(--nyxc-color-white);
+  --nyxc-color-text-inverse: var(--nyxc-color-ink);
+  --nyxc-color-accent: var(--nyxc-color-brand-cream);
+  --nyxc-color-accent-soft: var(--nyxc-color-brand-mint);
+  --nyxc-color-border: var(--nyxc-color-neutral-100);
+}

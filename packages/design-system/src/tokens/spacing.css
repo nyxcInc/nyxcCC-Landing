@@ -1,0 +1,18 @@
+/**
+ * Spacing/radius tokens. Replaces repo 1's ad hoc padding set
+ * (--padding-3/10/30/60, not a real scale) with a 4px-based scale.
+ */
+:root {
+  --nyxc-space-1: 4px;
+  --nyxc-space-2: 8px;
+  --nyxc-space-3: 12px;
+  --nyxc-space-4: 16px;
+  --nyxc-space-5: 24px;
+  --nyxc-space-6: 32px;
+  --nyxc-space-7: 48px;
+  --nyxc-space-8: 64px;
+
+  --nyxc-radius-sm: 10px; /* was --br-10 */
+  --nyxc-radius-md: 20px; /* was --br-20 */
+  --nyxc-radius-xl: 80px; /* was --br-80 */
+}

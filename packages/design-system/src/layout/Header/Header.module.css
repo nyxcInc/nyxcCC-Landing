@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--nyxc-space-5);
+  width: 100%;
+  padding: var(--nyxc-space-4) var(--nyxc-space-5);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--nyxc-space-5);
+}
+
+.navItem {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--nyxc-font-family-base);
+  font-size: var(--nyxc-font-size-200);
+  font-weight: var(--nyxc-font-weight-book);
+  color: var(--nyxc-color-text-primary);
+  text-decoration: none;
+  padding: 0;
+  transition: color 0.15s ease;
+}
+
+.navItem:hover {
+  color: var(--nyxc-color-accent);
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+}

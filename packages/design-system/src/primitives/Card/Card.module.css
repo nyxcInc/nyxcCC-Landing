@@ -1,0 +1,28 @@
+.card {
+  background-color: var(--nyxc-color-surface);
+  border: 1px solid var(--nyxc-color-border);
+}
+
+.padding-sm {
+  padding: var(--nyxc-space-3);
+}
+
+.padding-md {
+  padding: var(--nyxc-space-5);
+}
+
+.padding-lg {
+  padding: var(--nyxc-space-7);
+}
+
+.radius-sm {
+  border-radius: var(--nyxc-radius-sm);
+}
+
+.radius-md {
+  border-radius: var(--nyxc-radius-md);
+}
+
+.radius-xl {
+  border-radius: var(--nyxc-radius-xl);
+}
