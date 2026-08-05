@@ -2,11 +2,14 @@
 import type { NextPage } from "next";
 import { useEffect } from "react";
 import Image from "next/image";
-import { Button, Link } from "@nyxcinc/design-system";
 import styles from "./footer.module.css";
 
 type FooterProps = {
     className?: string;
+};
+
+const openExternalLink = (url: string) => {
+  window.open(url, "_blank", "noopener,noreferrer");
 };
 
 const Footer: NextPage<FooterProps> = ({ className = "" }) => {
@@ -63,9 +66,14 @@ useEffect(() => {
             <div className={styles.contactBlock}>
               <div className={styles.contactWrapper}>
                 <div className={styles.newsletter}>
-                  <Link href="https://www.linkedin.com/company/nyxcc/" size="sm" className={styles.contact}>
+                  <a
+                    href="https://www.linkedin.com/company/nyxcc/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.contact}
+                  >
                     LinkedIn
-                  </Link>
+                  </a>
                 </div>
               </div>
               <div className={styles.divider} />
@@ -74,9 +82,14 @@ useEffect(() => {
             <div className={styles.contactBlock}>
               <div className={styles.contactWrapper}>
                 <div className={styles.newsletter}>
-                  <Link href="https://nyxc.substack.com/" size="sm" className={styles.contact}>
+                  <a
+                    href="https://nyxc.substack.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.contact}
+                  >
                     Substack
-                  </Link>
+                  </a>
                 </div>
               </div>
               <div className={styles.divider} />
@@ -91,9 +104,13 @@ useEffect(() => {
 
             <div className={styles.toTopBlock}>
               <div className={styles.toTopWrapper}>
-                <Button variant="ghost" size="sm" onClick={onLogoClick} className={styles.toTop}>
+                <div 
+                  className={styles.toTop}
+                  onClick={onLogoClick}
+                  style={{ cursor: "pointer" }}
+                >
                   Intro
-                </Button>
+                </div>
               </div>
             </div>
 

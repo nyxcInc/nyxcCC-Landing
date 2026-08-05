@@ -1,29 +1,27 @@
 
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std";
+  src: url("/fonts/ITCAvantGardeStdBk.otf");
+  font-weight: 400;
+}
+
+
 html, body {
   margin: 0;
   padding: 0;
   line-height: normal;
   height: 100%;
 }
-
-/**
- * Local token names are kept as aliases onto @nyxcinc/design-system's
- * --nyxc-* tokens (imported in layout.tsx, above this file) so existing
- * component CSS Modules don't need to change during the incremental
- * migration. New/changed components should reference --nyxc-* directly.
- * See packages/design-system/docs/token-decisions.md for the full
- * reconciliation.
- */
 :root {
   /* Color */
-  --color-gainsboro: var(--nyxc-color-neutral-100);
-  --color-honeydew-200: var(--nyxc-color-brand-mint-soft);
-  --color-honeydew-100: var(--nyxc-color-brand-mint);
-  --color-wheat-300: var(--nyxc-color-brand-cream-invisible);
-  --color-wheat-200: var(--nyxc-color-brand-cream-transparent);
-  --color-wheat-100: var(--nyxc-color-brand-cream);
-  --color-white: var(--nyxc-color-white);
-  --color-gray: var(--nyxc-color-ink);
+  --color-gainsboro: #d9d9d9;
+  --color-honeydew-200: rgba(210, 255, 231, 0.8);
+  --color-honeydew-100: #d2ffe7;
+  --color-wheat-300: rgba(238, 215, 179, 0);
+  --color-wheat-200: rgba(238, 215, 179, 0.02);
+  --color-wheat-100: #eed7b3;
+  --color-white: #fff;
+  --color-gray: #090012;
 
   /* Gap */
   --gap-10: 10px;
@@ -35,17 +33,17 @@ html, body {
   --padding-60: 60px;
 
   /* BorderRadius */
-  --br-10: var(--nyxc-radius-sm);
-  --br-20: var(--nyxc-radius-md);
-  --br-80: var(--nyxc-radius-xl);
+  --br-10: 10px;
+  --br-20: 20px;
+  --br-80: 80px;
 
   /* Font */
-  --font-itc-avant-garde-gothic-std: var(--nyxc-font-family-base);
+  --font-itc-avant-garde-gothic-std: ITC Avant Garde Gothic Std;
 
   /* FontSize */
-  --font-size-14: var(--nyxc-font-size-100);
-  --font-size-15: var(--nyxc-font-size-200);
-  --font-size-20: var(--nyxc-font-size-300);
-  --font-size-30: var(--nyxc-font-size-400);
-  --font-size-60: var(--nyxc-font-size-500);
+  --font-size-14: 14px;
+  --font-size-15: 15px;
+  --font-size-20: 20px;
+  --font-size-30: 30px;
+  --font-size-60: 60px;
 }
